@@ -57,7 +57,7 @@ section li:before {
 }
 /*Optional class to add background to sections and cards*/
 .addBackground {
-  background-color: rgba(210, 210, 210, 0.742);
+  background-color: rgba(210, 210, 210, 0.361);
 }
 .addBackgroundBlue {
   background-color: rgba(73, 137, 177, 0.687);
@@ -86,6 +86,7 @@ section li:before {
   width: 100%;
 }
 /* Next & previous buttons */
+
 .prev,
 .next {
   cursor: pointer;
@@ -94,7 +95,7 @@ section li:before {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -110,6 +111,7 @@ section li:before {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color: white!important;
 }
 /* Fading animation */
 .fade {
