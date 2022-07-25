@@ -1,127 +1,134 @@
-body{
-     font-family: "Oxygen", sans-serif;   
+* {
+  box-sizing: border-box;
 }
-header{
-     background-image:url(images/background.jpg);
-     background-repeat: no-repeat;
-     background-size: 40%;
-     width: 100%;
-     text-align: center;
+body {
+  font-family: "Oxygen", sans-serif;
 }
-nav {
-  height: 40px;
+.profilePicture {
+  border-radius: 50%;
   width: 100%;
-  font-size: 20px;
-  color:white;
-  text-align: center;
-  padding-top: 15px;
-  background-color: rgb(73, 138, 177);
-  position: sticky;
-  top: 0;
-
 }
-section{
-     padding-left: 5%;
-     padding-right: 5%;
+/******Style Navigation******/
+nav {
+  background-color: #e3f2fd;
 }
-.profilePicture{
-     border-radius: 95px;
-     height: 200px;
+.navbar {
+  --bs-navbar-padding-y: 0 !important;
 }
-
-.navItem{
-     margin-left: 50px;
+.nav-link {
+  color: rgba(0, 57, 117, 0.553) !important;
 }
-h2{
-     text-align: center;
-     color: rgb(140, 129, 4);
+.nav-link:hover {
+  background-color: #ffffff;
+  color: rgb(46, 97, 152) !important;
+  transition: all 0.5s;
 }
-h1{
-     text-align: center;
-          color: rgb(9, 61, 134);
+.nav-link:visited {
+  color: rgb(35, 118, 82) !important;
 }
-h3{
-     text-align: center;
-     font-weight:bolder;
-     font-size: 25px;
-     color: rgb(46, 97, 152);
+/******Style Links******/
+a {
+  color: rgb(21, 127, 165) !important;
 }
-
-
-.addBackground{
-     background-color: rgba(210, 210, 210, 0.742);
+a:hover {
+  color: rgb(50, 93, 137) !important;
+}
+a:visited {
+  color: rgb(37, 143, 126) !important;
+}
+/******Sections******/
+h3 {
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(46, 97, 152);
+}
+section {
+  scroll-margin-top: 40px;
+}
+section ul {
+  list-style: none;
+}
+section li {
+  padding: 0 0.5em 0 1em;
+}
+section li:before {
+  content: "-";
+  padding-right: 5px;
+}
+/*Optional class to add background to sections and cards*/
+.addBackground {
+  background-color: rgba(210, 210, 210, 0.742);
 }
 .addBackgroundBlue {
-     background-color: rgba(59, 132, 215, 0.742);
-}
-.skillsContainer{
-     height: 300px;
-     width: 100%;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-content:space-between;
-     margin-bottom: 20px;
-}
-.skillsItem{
-     text-align: center;
-     flex-grow: 1;
-     height: 250px;
-     padding: 25px;
-     margin: 15px;
+  background-color: rgba(73, 137, 177, 0.687);
+  color: white;
 }
 
-.projectContainer{
-     height: max-content;
-     display: flex;
-     flex-wrap: wrap;
-     width: 100%;
-     justify-content: flex-start;
+/**** Slideshow container for projects display cards ****/
+.card-header {
+  color: white !important;
+  background-color: rgba(73, 137, 177, 0.687) !important;
 }
-
-.projectItem{
-     flex-basis: 20%;
-     flex-grow: 1;
-     text-align: left;
-     padding-left: 25px;
-     padding-top: 15px;
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-.rowBreak{
-     flex-grow: 1;
-     flex-basis: 100%;
-     height: 15px;
+/* Hide the images by default */
+.flashcardSlides,
+.librarySlides,
+.decoderSlides {
+  display: none;
+  animation: fade 2s 1 forwards;
 }
-.projectPictures{
-     width: 100%;
+/* Set width of slideshow images */
+.slideshow-container img {
+  width: 100%;
 }
-nav a{
-     color: white;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-
-a:visited {
-     color: rgb(189, 189, 189);
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-
-a:hover {
-     color: rgb(225, 211, 12);
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
-a:active {
-     color: blue;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-footer a img{
-     height: 20px;
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
+/***** Format Footer *****/
+footer a img {
+  height: 25px;
+  padding: 2%;
+}
 footer{
-     height: 30px;
-     width: 100%;
-     font-size: 20px;
-     font-weight: bolder;
-     color: white;
-     background-color:rgb(0, 0, 0);
-     text-align: center;
-     padding-bottom: 5px;
-     padding-top: 15px;
-     bottom: 0;
+  margin-top: 2%;
 }
