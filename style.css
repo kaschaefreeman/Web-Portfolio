@@ -128,9 +128,13 @@ section li:before {
 }
 /***** Format Footer *****/
 footer a img {
-  height: 25px;
-  padding: 2%;
+  height: 30px;
 }
 footer{
   margin-top: 2%;
+  padding-top: 15px;;
+
+}
+footer .col{
+  width: fit-content!important
 }
