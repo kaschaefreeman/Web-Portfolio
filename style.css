@@ -8,6 +8,10 @@ body {
   border-radius: 50%;
   width: 100%;
 }
+.headingSeparator {
+        display:none;
+    }
+
 /******Style Navigation******/
 nav {
   background-color: #e3f2fd;
@@ -135,6 +139,8 @@ footer{
   padding-top: 15px;;
 
 }
-footer .col{
-  width: fit-content!important
-}
+@media only screen and (min-width: 992px) {
+    .headingSeparator {
+        display:block;
+    }
+  }
